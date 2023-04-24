@@ -19,7 +19,6 @@ packages:
     - rustup
     - vhs
     - rnix-lsp
-    - emacs
 paths:
     - $HOME/bin
     - $HOME/.local/bin
