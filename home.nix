@@ -27,7 +27,6 @@
     pkgs.vhs
     pkgs.rnix-lsp
     pkgs.emacs
-    pkgs.gnome-tweaks
     # Fleek Bling
     pkgs.git
     pkgs.htop
