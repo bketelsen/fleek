@@ -20,7 +20,6 @@ packages:
     - vhs
     - rnix-lsp
     - emacs
-    - gnome-tweaks
 paths:
     - $HOME/bin
     - $HOME/.local/bin
