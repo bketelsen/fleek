@@ -31,6 +31,10 @@ systems:
       hostname: f84d89911e5d.ant.amazon.com
       os: darwin
       username: brianjk
+    - arch: x86_64
+      hostname: beast
+      os: linux
+      username: bjk
 unfree: true
 users:
     - email: bketelsen@gmail.com
@@ -38,3 +42,8 @@ users:
       ssh_private_key_file: ~/.ssh/id_rsa
       ssh_public_key_file: ~/.ssh/id_rsa.pub
       username: brianjk
+    - email: bketelsen@gmail.com
+      name: Brian Ketelsen
+      ssh_private_key_file: ~/.ssh/id_rsa
+      ssh_public_key_file: ~/.ssh/id_rsa.pub
+      username: bjk
