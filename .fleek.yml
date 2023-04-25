@@ -25,6 +25,7 @@ packages:
     - rustup
     - vhs
     - rnix-lsp
+    - duf
 paths:
     - $HOME/bin
     - $HOME/.local/bin
