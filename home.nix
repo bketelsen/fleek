@@ -26,6 +26,7 @@
     pkgs.rustup
     pkgs.vhs
     pkgs.rnix-lsp
+    pkgs.duf
     # Fleek Bling
     pkgs.git
     pkgs.htop
