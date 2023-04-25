@@ -1,5 +1,23 @@
 {
   "nodes": {
+    "fleek": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1682417239,
+        "narHash": "sha256-o/MYDcnUEKD5WFsnLBDwEoGqQEo0WLmUP32njK3rY+w=",
+        "owner": "ublue-os",
+        "repo": "fleek",
+        "rev": "0cdcee8faa1a6bcce1a47c81537f13292091849f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ublue-os",
+        "repo": "fleek",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -22,6 +40,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1681154110,
+        "narHash": "sha256-OQwWzlzAY1dCqgSsgZzsPIOGmX4pBGaoXOy0rSl4b5Y=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "115a96e2ac1e92937cd47c30e073e16dcaaf6247",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-22.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1682362401,
         "narHash": "sha256-/UMUHtF2CyYNl4b60Z2y4wwTTdIWGKhj9H301EDcT9M=",
         "owner": "nixos",
@@ -38,8 +72,9 @@
     },
     "root": {
       "inputs": {
+        "fleek": "fleek",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
