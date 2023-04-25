@@ -8,6 +8,8 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    fleek.url = "github:nix-community/home-manager";
+    fleek.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
@@ -18,6 +20,8 @@
       "brianjk@f84d89911e5d.ant.amazon.com" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.aarch64-darwin; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
+        home.packages = [ fleek.packages.aarch64-darwin.default ];
+
         modules = [ 
           ./home.nix 
           ./path.nix
@@ -34,6 +38,8 @@
       "bjk@beast" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
+        home.packages = [ fleek.packages.x86_64-linux.default ];
+
         modules = [ 
           ./home.nix 
           ./path.nix
