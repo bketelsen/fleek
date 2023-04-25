@@ -28,7 +28,7 @@
       "brianjk@f84d89911e5d.ant.amazon.com" = home-manager.lib.homeManagerConfiguration {
        
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
-        home.packages = [ fleek.packages.{$system}.default ];
+        home.packages = [ fleek.packages.${system}.default ];
 
         modules = [ 
           ./home.nix 
@@ -47,7 +47,7 @@
       "bjk@beast" = home-manager.lib.homeManagerConfiguration {
        
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
-        home.packages = [ fleek.packages.{$system}.default ];
+        home.packages = [ fleek.packages.${system}.default ];
 
         modules = [ 
           ./home.nix 
