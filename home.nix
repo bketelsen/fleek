@@ -27,6 +27,7 @@
     pkgs.vhs
     pkgs.rnix-lsp
     pkgs.duf
+    pkgs.ruby_3_2
     # Fleek Bling
     pkgs.git
     pkgs.htop
