@@ -26,7 +26,6 @@ packages:
     - vhs
     - rnix-lsp
     - duf
-    - ruby_3_2
 paths:
     - $HOME/bin
     - $HOME/.local/bin
