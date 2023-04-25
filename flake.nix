@@ -9,7 +9,6 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
-    flake-utils.inputs.nixpkgs.follows = "nixpkgs";
 
     fleek.url = "github:nix-community/home-manager";
     fleek.inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +17,7 @@
   outputs = { nixpkgs, home-manager, flake-utils, fleek, ... }@inputs: 
         flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
+        bob = nixpkgs.legacyPackages.${system};
       in
         {
     # Available through 'home-manager --flake .#your-username@your-hostname'
@@ -26,7 +25,7 @@
     
 
       "brianjk@f84d89911e5d.ant.amazon.com" = home-manager.lib.homeManagerConfiguration {
-       
+        pkgs = nixpkgs.legacyPackages.${system}; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
         home.packages = [ fleek.packages.${system}.default ];
 
@@ -45,7 +44,7 @@
       
 
       "bjk@beast" = home-manager.lib.homeManagerConfiguration {
-       
+        pkgs = nixpkgs.legacyPackages.${system}; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
         home.packages = [ fleek.packages.${system}.default ];
 
