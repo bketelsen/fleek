@@ -33,6 +33,10 @@
           # Host Specific configs
           ./f84d89911e5d.ant.amazon.com/f84d89911e5d.ant.amazon.com.nix
           ./f84d89911e5d.ant.amazon.com/user.nix
+           home.packages = [
+            fleek.packages.aarch64-darwin.default
+          ];
+
         ];
       };
       
@@ -50,6 +54,10 @@
           # Host Specific configs
           ./beast/beast.nix
           ./beast/user.nix
+           home.packages = [
+            fleek.packages.x86_64-linux.default
+          ];
+
         ];
       };
       
