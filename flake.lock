@@ -1,40 +1,20 @@
 {
   "nodes": {
-    "flake-utils": {
-      "inputs": {
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1681202837,
-        "narHash": "sha256-H+Rh19JDwRtpVPAWp64F+rlEtxUWBAQW28eAi3SRSzg=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "cfacdce06f30d2b68473a46042957675eebb3401",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "fleek": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1682347289,
-        "narHash": "sha256-BQHY4lzS3Tkx4XLmZPR5FSjKWMP+cKNtUM8pTC4L9Ek=",
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "rev": "0263da497eae3246ea15ed6f0f7875bc15592cef",
+        "lastModified": 1682382140,
+        "narHash": "sha256-eZ8iWpYISvM6Ti69oXYy7V2ys5STtRRDTEhMs4cayN8=",
+        "owner": "ublue-os",
+        "repo": "fleek",
+        "rev": "993e409ee9b774f54d167d8b27f5a696eaa169f4",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
-        "repo": "home-manager",
+        "owner": "ublue-os",
+        "repo": "fleek",
         "type": "github"
       }
     },
@@ -60,6 +40,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1682389866,
+        "narHash": "sha256-rECwjGCuvjXme6QVGiNdt6pVpFwquGDJe2gR6xuEoeU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "29c07054efdbbb8719e8e5487c86878215b7205a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-22.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1682268651,
         "narHash": "sha256-2eZriMhnD24Pmb8ideZWZDiXaAVe6LzJrHQiNPck+Lk=",
         "owner": "nixos",
@@ -76,25 +72,9 @@
     },
     "root": {
       "inputs": {
-        "flake-utils": "flake-utils",
         "fleek": "fleek",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
-      }
-    },
-    "systems": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
