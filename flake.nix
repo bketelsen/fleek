@@ -15,7 +15,7 @@
     fleek.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, home-manager, flake-utils, fleek, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, flake-utils, fleek, ... }@inputs: 
         flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
