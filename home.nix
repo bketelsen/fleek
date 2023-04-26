@@ -28,6 +28,7 @@
     pkgs.rnix-lsp
     pkgs.duf
     pkgs.ruby_3_2
+    pkgs.python310Full
     # Fleek Bling
     pkgs.git
     pkgs.htop

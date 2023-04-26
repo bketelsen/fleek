@@ -27,6 +27,7 @@ packages:
     - rnix-lsp
     - duf
     - ruby_3_2
+    - python310Full
 paths:
     - $HOME/bin
     - $HOME/.local/bin
