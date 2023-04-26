@@ -6,5 +6,8 @@ home.sessionVariables = {
 };
 
 services.syncthing.enable = true;
+services.syncthing.extraOptions = [
+  "listenAddress=http://0.0.0.0:8443"
+];
  
 }
