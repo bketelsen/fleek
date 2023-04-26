@@ -4,5 +4,7 @@
 home.sessionVariables = {
   FLEEK_MANAGED= "1";
 };
+
+services.syncthing.enable = true;
  
 }
