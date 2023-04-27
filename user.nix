@@ -3,6 +3,7 @@
   # configs mentioned here must be listed in ~/fleek.yml #programs array or you will get errors
 home.sessionVariables = {
   FLEEK_MANAGED= "1";
+  EDITOR = "nvim";
 };
 
 services.syncthing.enable = true;
