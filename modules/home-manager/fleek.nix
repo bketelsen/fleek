@@ -13,6 +13,10 @@ in
       type = types.listOf types.str;
       default = [ ];
     };
+    packages = mkOption {
+      type = types.listOf types.package;
+      default = [ ];
+    };
 
   };
 
@@ -22,7 +26,7 @@ in
       {
         home.packages = with pkgs; [
           git
-        ];
+        ] ++ cfg.packages;
         home.sessionPath = cfg.path;
         programs.zsh = {
           profileExtra = "[ -r ~/.nix-profile/etc/profile.d/nix.sh ] && source  ~/.nix-profile/etc/profile.d/nix.sh";
@@ -51,6 +55,8 @@ in
           github-cli
           glab
         ];
+        programs.starship.enable = true;
+
       })
       (mkIf (builtins.elem cfg.bling [ "high" "default" ]) {
         home.packages = with pkgs; [
@@ -58,6 +64,7 @@ in
           ripgrep
           vscode
         ];
+        programs.direnv.enable = true;
       })
       (mkIf (builtins.elem cfg.bling [ "high" ]) {
         home.packages = with pkgs; [
@@ -85,8 +92,7 @@ in
         };
         programs.atuin.enable = true;
         programs.zoxide.enable = true;
-        programs.direnv.enable = true;
-        programs.starship.enable = true;
+
       })
     ];
 

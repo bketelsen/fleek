@@ -1,0 +1,80 @@
+{
+        "aliases": {
+                "bluefin": "cd ~/projects/ublue/bluefin",
+                "cdfleek": "cd ~/projects/ublue/fleek",
+                "fleeks": "cd ~/.local/share/fleek",
+                "gcb": "git checkout -b",
+                "gitmain": "git checkout main && git pull",
+                "projects": "cd ~/projects",
+                "ublue": "cd ~/projects/ublue"
+        },
+        "bling": "high",
+        "ejected": false,
+        "flakedir": ".local/share/fleek",
+        "git": {
+                "autocommit": true,
+                "autopull": true,
+                "autopush": true,
+                "enabled": true
+        },
+        "min_version": "0.8.4",
+        "name": "Fleek Configuration",
+        "packages": [
+                "helix",
+                "go",
+                "gopls",
+                "go-tools",
+                "golangci-lint",
+                "gomodifytags",
+                "gotests",
+                "impl",
+                "gcc",
+                "nodejs",
+                "yarn",
+                "rustup",
+                "vhs",
+                "rnix-lsp",
+                "duf",
+                "ruby_3_2"
+        ],
+        "paths": [
+                "$HOME/bin",
+                "$HOME/.local/bin",
+                "$HOME/go/bin"
+        ],
+        "programs": [
+                "dircolors"
+        ],
+        "shell": "zsh",
+        "systems": [
+                {
+                        "arch": "aarch64",
+                        "hostname": "f84d89911e5d.ant.amazon.com",
+                        "os": "darwin",
+                        "username": "brianjk"
+                },
+                {
+                        "arch": "x86_64",
+                        "hostname": "beast",
+                        "os": "linux",
+                        "username": "bjk"
+                }
+        ],
+        "unfree": true,
+        "users": [
+                {
+                        "email": "bketelsen@gmail.com",
+                        "name": "Brian Ketelsen",
+                        "ssh_private_key_file": "~/.ssh/id_rsa",
+                        "ssh_public_key_file": "~/.ssh/id_rsa.pub",
+                        "username": "brianjk"
+                },
+                {
+                        "email": "bketelsen@gmail.com",
+                        "name": "Brian Ketelsen",
+                        "ssh_private_key_file": "~/.ssh/id_rsa",
+                        "ssh_public_key_file": "~/.ssh/id_rsa.pub",
+                        "username": "bjk"
+                }
+        ]
+}
