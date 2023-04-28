@@ -55,11 +55,11 @@
           extraSpecialArgs = { inherit inputs outputs; };
         modules = [
           ./home.nix
-          ./path.nix
-          ./shell.nix
+          #./path.nix
+          #./shell.nix
           ./user.nix
           ./aliases.nix
-          ./programs.nix
+          #./programs.nix
           # Host Specific configs
           ./beast/beast.nix
           ./beast/user.nix
