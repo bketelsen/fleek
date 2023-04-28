@@ -21,7 +21,7 @@ home.activation = {
         $HOME/.local/state/nvim
     $DRY_RUN_CMD rm -rf $VERBOSE_ARG \
         $HOME/.cache/nvim
-    $DRY_RUN_CMD git clone --depth 1 \
+    $DRY_RUN_CMD ${pkgs.git}/bin/git clone --depth 1 \
       https://github.com/AstroNvim/AstroNvim \
       ~/.config/nvim
     
