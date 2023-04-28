@@ -11,7 +11,7 @@ services.syncthing.extraOptions = [
   "--gui-address=http://0.0.0.0:8384"
 ];
 
-
+home.activation = {
   getAstroNvim = lib.hm.dag.entryAfter ["writeBoundary"] ''
     $DRY_RUN_CMD rm -rf $VERBOSE_ARG \
         $HOME/.config/nvim
@@ -26,5 +26,6 @@ services.syncthing.extraOptions = [
       ~/.config/nvim
     
   '';
+};
 
 }
