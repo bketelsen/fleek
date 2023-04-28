@@ -1,4 +1,14 @@
-{ config, pkgs, misc, ... }: {
+{ config, outputs,pkgs, misc, ... }: {
+    imports = [
+    # If you want to use modules your own flake exports (from modules/home-manager):
+    outputs.homeManagerModules.fleek
+
+    # Or modules exported from other flakes (such as nix-colors):
+    # inputs.nix-colors.homeManagerModules.default
+
+    # You can also split up your configuration and import pieces of it here:
+    # ./nvim.nix
+  ];
   # DO NOT EDIT: This file is managed by fleek. Manual changes will be overwritten.
   nixpkgs = {
     # Configure your nixpkgs instance
@@ -11,7 +21,9 @@
       
     };
   };
-
+  fleek = {
+    bling = "high";
+  };
   
   # managed by fleek, modify ~/.fleek.yml to change installed packages
   
@@ -19,7 +31,6 @@
   # programs are installed and configuration applied to dotfiles
   home.packages = [
     # user selected packages
-    pkgs.helix
     pkgs.go
     pkgs.gopls
     pkgs.go-tools
@@ -35,21 +46,9 @@
     pkgs.rnix-lsp
     pkgs.duf
     pkgs.ruby_3_2
+
     # Fleek Bling
-    pkgs.git
-    pkgs.htop
-    pkgs.github-cli
-    pkgs.glab
-    pkgs.fzf
-    pkgs.ripgrep
-    pkgs.vscode
-    pkgs.lazygit
-    pkgs.jq
-    pkgs.yq
-    pkgs.neovim
-    pkgs.neofetch
-    pkgs.btop
-    pkgs.cheat
+
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
   fonts.fontconfig.enable = true; 
