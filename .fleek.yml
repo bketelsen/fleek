@@ -19,6 +19,12 @@ name: Fleek Configuration
 packages:
     - helix
     - go
+    - gopls
+    - go-tools
+    - golangci-lint
+    - gomodifytags
+    - gotests
+    - impl
     - gcc
     - nodejs
     - yarn

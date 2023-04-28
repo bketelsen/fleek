@@ -21,6 +21,12 @@
     # user selected packages
     pkgs.helix
     pkgs.go
+    pkgs.gopls
+    pkgs.go-tools
+    pkgs.golangci-lint
+    pkgs.gomodifytags
+    pkgs.gotests
+    pkgs.impl
     pkgs.gcc
     pkgs.nodejs
     pkgs.yarn
