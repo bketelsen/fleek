@@ -15,7 +15,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, fleek, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, fleek, ... }@inputs:
   let
         inherit (self) outputs;
   in
@@ -72,7 +72,28 @@
 
         ];
       };
+      "bjk@ghanima" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+          extraSpecialArgs = { inherit inputs outputs; };
+        modules = [
+          ./home.nix
+          #./path.nix
+          #./shell.nix
+          ./user.nix
+          ./aliases.nix
+          #./programs.nix
+          # Host Specific configs
+          ./ghanima/ghanima.nix
+          ./ghanima/user.nix
+          # self-manage fleek
+          {
+            home.packages = [
+              fleek.packages.x86_64-linux.default
+            ];
+          }
 
+        ];
+      };
     };
   };
 }
