@@ -49,6 +49,10 @@ systems:
       hostname: beast
       os: linux
       username: bjk
+    - arch: aarch64
+      hostname: chapterhouse
+      os: darwin
+      username: bjk
 unfree: true
 users:
     - email: bketelsen@gmail.com
