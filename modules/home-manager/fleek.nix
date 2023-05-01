@@ -17,16 +17,89 @@ in
       type = types.listOf types.package;
       default = [ ];
     };
+    users = mkOption {
+      type = types.attrsOf (types.submodule {
+        options = {
+          name = mkOption {
+            type = types.str;
+            example = "Jimmy Johnson";
+          };
+          username = mkOption {
+            type = types.str;
+            example = "jj";
+          };
+          email = mkOption {
+            type = types.str;
+            example = "jimmy@johnson.com";
+          };
+          ssh_private_key_file = mkOption {
+            type = types.str;
+            example = "~/.ssh/id_rsa";
+          };
+          ssh_public_key_file = mkOption {
+            type = types.str;
+            example = "~/.ssh/id_rsa.pub";
+          };
+        };
+      });
+    };
+    systems = mkOption
+      {
+        type = types.attrsOf
+          (types.submodule {
+            options = {
+              arch = mkOption {
+                type = types.str;
+                example = "aarch64";
+              };
+              hostname = mkOption {
+                type = types.str;
+                example = "gojira";
+              };
+              os = mkOption {
+                type = types.str;
+                example = "darwin";
+              };
+              user = mkOption {
+                type = types.attrsOf (types.submodule {
+                  options = {
+                    name = mkOption {
+                      type = types.str;
+                      example = "Jimmy Johnson";
+                    };
+                    username = mkOption {
+                      type = types.str;
+                      example = "jj";
+                    };
+                    email = mkOption {
+                      type = types.str;
+                      example = "jimmy@johnson.com";
+                    };
+                    ssh_private_key_file = mkOption {
+                      type = types.str;
+                      example = "~/.ssh/id_rsa";
+                    };
+                    ssh_public_key_file = mkOption {
+                      type = types.str;
+                      example = "~/.ssh/id_rsa.pub";
+                    };
+                  };
+                });
+              };
 
+            };
+          });
+      };
   };
 
   config = mkMerge
     [
       # Unconditional stuff.
       {
-        home.packages = with pkgs; [
-          git
-        ] ++ cfg.packages;
+        home.packages = with pkgs;
+          [
+            git
+          ] ++ cfg.packages;
         home.sessionPath = cfg.path;
         programs.zsh = {
           profileExtra = "[ -r ~/.nix-profile/etc/profile.d/nix.sh ] && source  ~/.nix-profile/etc/profile.d/nix.sh";

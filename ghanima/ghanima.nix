@@ -1,5 +1,5 @@
-{ pkgs, misc, ... }: {
-    home.username = "bjk";
+{ pkgs, misc, config, ... }: {
+    home.username = config.fleek.systems.ghanima.user.bjk.username;
     home.homeDirectory = "/home/bjk";
     programs.git = {
         enable = true;
@@ -8,8 +8,8 @@
             graph = "log --decorate --oneline --graph";
             add-nowhitespace = "!git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -";
         };
-        userName = "Brian Ketelsen";
-        userEmail = "bketelsen@gmail.com";
+        userName = config.fleek.systems.ghanima.user.bjk.name;
+        userEmail =config.fleek.systems.ghanima.user.bjk.email;
         extraConfig = {
             feature.manyFiles = true;
             init.defaultBranch = "main";
@@ -17,8 +17,8 @@
         };
 
         signing = {
-            key = "~/.ssh/id_rsa";
-            signByDefault = builtins.stringLength "~/.ssh/id_rsa" > 0;
+            key = config.fleek.systems.ghanima.user.bjk.ssh_private_key_file;
+            signByDefault = builtins.stringLength config.fleek.systems.ghanima.user.bjk.ssh_private_key_file > 0;
         };
 
         lfs.enable = true;

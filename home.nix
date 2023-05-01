@@ -11,6 +11,25 @@
       "$HOME/.local/bin"
       "$HOME/go/bin"
     ];
+    users = {
+      bjk = {
+        name = "Brian Ketelsen";
+        email = "bketelsen@gmail.com";
+        ssh_private_key_file = "~/.ssh/id_rsa";
+        ssh_public_key_file = "~/.ssh/id_rsa.pub";
+        username = "bjk";
+      };
+    };
+    systems = {
+      ghanima = {
+        arch = "x86_64";
+        hostname = "ghanima";
+        os = "linux";
+        user = {
+          bjk = config.fleek.users.bjk;
+        };
+      };
+    };
     packages = [
       pkgs.go
       pkgs.gopls
