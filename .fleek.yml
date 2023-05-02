@@ -46,6 +46,10 @@ systems:
       os: darwin
       username: brianjk
     - arch: x86_64
+      hostname: ghanima
+      os: linux
+      username: bjk
+    - arch: x86_64
       hostname: beast
       os: linux
       username: bjk
