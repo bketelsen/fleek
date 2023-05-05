@@ -7,6 +7,7 @@ home.sessionVariables = {
   NODE_PATH="~/.npm-packages/lib/node_modules";
 };
 
+# set global npm home so `npm i --global` has a writable directory
 home.file.".npmrc".text = ''
       prefix = ~/.npm-packages
 '';
