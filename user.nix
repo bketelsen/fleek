@@ -8,7 +8,7 @@ home.sessionVariables = {
 };
 
 home.file.".npmrc".text = ''
-      prefix = ${HOME}/.npm-packages
+      prefix = ~/.npm-packages
 '';
 services.syncthing.enable = true;
 services.syncthing.extraOptions = [
