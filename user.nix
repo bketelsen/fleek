@@ -4,8 +4,12 @@
 home.sessionVariables = {
   FLEEK_MANAGED= "1";
   EDITOR = "nvim";
+  NODE_PATH="~/.npm-packages/lib/node_modules";
 };
 
+home.file.".npmrc".text = ''
+      prefix = ${HOME}/.npm-packages
+'';
 services.syncthing.enable = true;
 services.syncthing.extraOptions = [
   "--gui-address=http://0.0.0.0:8384"

@@ -34,6 +34,7 @@ packages:
     - duf
     - ruby_3_2
 paths:
+    - $HOME/.npm-packages/bin
     - $HOME/bin
     - $HOME/.local/bin
     - $HOME/go/bin
