@@ -16,6 +16,7 @@ git:
     enabled: true
 min_version: 0.8.4
 name: Fleek Configuration
+overlays: {}
 packages:
     - helix
     - go
@@ -57,6 +58,10 @@ systems:
     - arch: aarch64
       hostname: chapterhouse
       os: darwin
+      username: bjk
+    - arch: x86_64
+      hostname: nix2
+      os: linux
       username: bjk
 unfree: true
 users:
