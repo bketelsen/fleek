@@ -34,8 +34,8 @@ packages:
     - rnix-lsp
     - duf
     - ruby_3_2
+    - synology-drive-client
 paths:
-    - $HOME/.npm-packages/bin
     - $HOME/bin
     - $HOME/.local/bin
     - $HOME/go/bin
@@ -58,10 +58,6 @@ systems:
     - arch: aarch64
       hostname: chapterhouse
       os: darwin
-      username: bjk
-    - arch: x86_64
-      hostname: nix2
-      os: linux
       username: bjk
 unfree: true
 users:
