@@ -35,6 +35,7 @@
     pkgs.rnix-lsp
     pkgs.duf
     pkgs.ruby_3_2
+    pkgs.hugo
     # Fleek Bling
     pkgs.git
     pkgs.htop
