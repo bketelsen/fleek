@@ -35,7 +35,6 @@
     pkgs.rnix-lsp
     pkgs.duf
     pkgs.ruby_3_2
-    pkgs.synology-drive-client
     # Fleek Bling
     pkgs.git
     pkgs.htop

@@ -34,7 +34,6 @@ packages:
     - rnix-lsp
     - duf
     - ruby_3_2
-    - synology-drive-client
 paths:
     - $HOME/bin
     - $HOME/.local/bin
