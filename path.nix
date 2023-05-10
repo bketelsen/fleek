@@ -4,5 +4,6 @@
     "$HOME/bin"
     "$HOME/.local/bin"
     "$HOME/go/bin"
+    "$HOME/.npm-packages/bin"
  ];
 }
