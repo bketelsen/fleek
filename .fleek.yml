@@ -35,6 +35,7 @@ packages:
     - duf
     - ruby_3_2
     - hugo
+    - wget
 paths:
     - $HOME/bin
     - $HOME/.local/bin

@@ -36,6 +36,7 @@
     pkgs.duf
     pkgs.ruby_3_2
     pkgs.hugo
+    pkgs.wget
     # Fleek Bling
     pkgs.git
     pkgs.htop
