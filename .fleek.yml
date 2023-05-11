@@ -36,6 +36,7 @@ packages:
     - ruby_3_2
     - hugo
     - wget
+    - just
 paths:
     - $HOME/bin
     - $HOME/.local/bin
