@@ -17,8 +17,8 @@
         };
 
         signing = {
-            key = "~/.ssh/id_rsa";
-            signByDefault = builtins.stringLength "~/.ssh/id_rsa" > 0;
+            key = "~/.ssh/id_ecdsa";
+            signByDefault = builtins.stringLength "~/.ssh/id_ecdsa" > 0;
         };
 
         lfs.enable = true;
