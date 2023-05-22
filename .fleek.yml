@@ -33,7 +33,6 @@ packages:
     - vhs
     - rnix-lsp
     - duf
-    - ruby_3_2
     - hugo
     - wget
     - just
