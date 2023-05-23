@@ -36,6 +36,7 @@ packages:
     - hugo
     - wget
     - just
+    - flyctl
 paths:
     - $HOME/bin
     - $HOME/.local/bin
