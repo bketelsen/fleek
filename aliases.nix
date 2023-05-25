@@ -11,8 +11,6 @@
     
     gitmain = "git checkout main && git pull";
     
-    just = "just --unstable";
-    
     projects = "cd ~/projects";
     
     ublue = "cd ~/projects/ublue";

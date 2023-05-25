@@ -6,7 +6,6 @@ aliases:
     gitmain: git checkout main && git pull
     projects: cd ~/projects
     ublue: cd ~/projects/ublue
-    just: just --unstable
 bling: high
 ejected: false
 flakedir: .local/share/fleek

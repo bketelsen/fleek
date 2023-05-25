@@ -37,6 +37,7 @@
     pkgs.hugo
     pkgs.wget
     pkgs.just
+    pkgs.flyctl
     # Fleek Bling
     pkgs.git
     pkgs.htop
