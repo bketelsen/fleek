@@ -1,4 +1,5 @@
 { pkgs, misc, ... }: {
+  # DO NOT EDIT: This file is managed by fleek. Manual changes will be overwritten.
     home.username = "brianjk";
     home.homeDirectory = "/Users/brianjk";
     programs.git = {
@@ -24,4 +25,5 @@
         lfs.enable = true;
         ignores = [ ".direnv" "result" ];
   };
+  
 }

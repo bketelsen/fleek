@@ -35,14 +35,11 @@
           ./aliases.nix
           ./programs.nix
           # Host Specific configs
-          ./f84d89911e5d.ant.amazon.com/f84d89911e5d.ant.amazon.com.nix
-          ./f84d89911e5d.ant.amazon.com/user.nix
+          ./f84d89911e5d.ant.amazon.com/brianjk.nix
+          ./f84d89911e5d.ant.amazon.com/custom.nix
           # self-manage fleek
           ({
            nixpkgs.overlays = [];
-           home.packages = [
-            fleek.packages.aarch64-darwin.default
-          ];
           })
 
         ];
@@ -59,14 +56,11 @@
           ./aliases.nix
           ./programs.nix
           # Host Specific configs
-          ./ghanima/ghanima.nix
-          ./ghanima/user.nix
+          ./ghanima/bjk.nix
+          ./ghanima/custom.nix
           # self-manage fleek
           ({
            nixpkgs.overlays = [];
-           home.packages = [
-            fleek.packages.x86_64-linux.default
-          ];
           })
 
         ];
@@ -83,14 +77,11 @@
           ./aliases.nix
           ./programs.nix
           # Host Specific configs
-          ./beast/beast.nix
-          ./beast/user.nix
+          ./beast/bjk.nix
+          ./beast/custom.nix
           # self-manage fleek
           ({
            nixpkgs.overlays = [];
-           home.packages = [
-            fleek.packages.x86_64-linux.default
-          ];
           })
 
         ];
@@ -107,14 +98,11 @@
           ./aliases.nix
           ./programs.nix
           # Host Specific configs
-          ./chapterhouse/chapterhouse.nix
-          ./chapterhouse/user.nix
+          ./chapterhouse/bjk.nix
+          ./chapterhouse/custom.nix
           # self-manage fleek
           ({
            nixpkgs.overlays = [];
-           home.packages = [
-            fleek.packages.aarch64-darwin.default
-          ];
           })
 
         ];

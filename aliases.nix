@@ -1,19 +1,19 @@
 { pkgs, misc, ... }: {
   # DO NOT EDIT: This file is managed by fleek. Manual changes will be overwritten.
    home.shellAliases = {
-    bluefin = "cd ~/projects/ublue/bluefin";
+    "bluefin" = "cd ~/projects/ublue/bluefin";
     
-    cdfleek = "cd ~/projects/ublue/fleek";
+    "cdfleek" = "cd ~/projects/ublue/fleek";
     
-    fleeks = "cd ~/.local/share/fleek";
+    "fleeks" = "cd ~/.local/share/fleek";
     
-    gcb = "git checkout -b";
+    "gcb" = "git checkout -b";
     
-    gitmain = "git checkout main && git pull";
+    "gitmain" = "git checkout main && git pull";
     
-    projects = "cd ~/projects";
+    "projects" = "cd ~/projects";
     
-    ublue = "cd ~/projects/ublue";
+    "ublue" = "cd ~/projects/ublue";
     
     # bat --plain for unformatted cat
     catp = "bat -P";
