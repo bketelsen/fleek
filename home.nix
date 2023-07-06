@@ -45,7 +45,6 @@
     pkgs.glab
     pkgs.fzf
     pkgs.ripgrep
-    pkgs.vscode
     pkgs.lazygit
     pkgs.jq
     pkgs.yq
