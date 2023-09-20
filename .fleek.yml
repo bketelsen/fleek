@@ -16,7 +16,7 @@ min_version: 0.8.4
 name: Fleek Configuration
 overlays: {}
 packages:
-    - go
+    - go_1_21
 paths:
     - $HOME/bin
     - $HOME/.local/bin

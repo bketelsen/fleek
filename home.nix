@@ -20,7 +20,7 @@
   # programs are installed and configuration applied to dotfiles
   home.packages = [
     # user selected packages
-    pkgs.go
+    pkgs.go_1_21
     # Fleek Bling
     pkgs.git
     pkgs.htop
