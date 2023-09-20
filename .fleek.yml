@@ -1,0 +1,39 @@
+aliases:
+    fleeks: cd ~/.local/share/fleek
+allow_broken: false
+auto_gc: true
+bling: high
+blocklist: []
+byo_git: false
+ejected: false
+flakedir: .local/share/fleek
+git:
+    autocommit: true
+    autopull: true
+    autopush: true
+    enabled: true
+min_version: 0.8.4
+name: Fleek Configuration
+overlays: {}
+packages:
+    - helix
+paths:
+    - $HOME/bin
+    - $HOME/.local/bin
+programs:
+    - dircolors
+shell: zsh
+systems:
+    - arch: aarch64
+      home: ""
+      hostname: chapterhouse
+      os: darwin
+      username: bjk
+track: nixos-unstable
+unfree: true
+users:
+    - email: bketelsen@gmail.com
+      name: Brian Ketelsen
+      ssh_private_key_file: ~/.ssh/id_rsa
+      ssh_public_key_file: ~/.ssh/id_rsa.pub
+      username: bjk

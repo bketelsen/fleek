@@ -1,0 +1,79 @@
+{
+  "nodes": {
+    "fleek": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "narHash": "sha256-Amy21QjVFYyp4IHk0ZynsDwq5bmGs6lri4NcC5pk+Fw=",
+        "rev": "53bf327cf4b91294df8f56ba83d19353cf952ed3",
+        "revCount": 428,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/ublue-os/fleek/0.9.23/018ab3e8-e0c1-77d6-badf-3144b03918a8/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/ublue-os/fleek/%2A.tar.gz"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "narHash": "sha256-yXUtJZQweg6v9G5fXStqkVNwxT4Xf+cux37yBVpaYCY=",
+        "rev": "0ed5f9786bba801c59fb53eef497438040acd471",
+        "revCount": 3025,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.1.3025%2Brev-0ed5f9786bba801c59fb53eef497438040acd471/018ab3a7-4a09-749b-8d67-431092b688dc/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/nix-community/home-manager/0.1.tar.gz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1681154110,
+        "narHash": "sha256-OQwWzlzAY1dCqgSsgZzsPIOGmX4pBGaoXOy0rSl4b5Y=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "115a96e2ac1e92937cd47c30e073e16dcaaf6247",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-22.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1694959747,
+        "narHash": "sha256-CXQ2MuledDVlVM5dLC4pB41cFlBWxRw4tCBsFrq3cRk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "970a59bd19eff3752ce552935687100c46e820a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fleek": "fleek",
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
