@@ -16,7 +16,6 @@ min_version: 0.8.4
 name: Fleek Configuration
 overlays: {}
 packages:
-    - helix
     - go
 paths:
     - $HOME/bin
