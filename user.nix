@@ -1,5 +1,6 @@
-{ pkgs, misc, ... }: {
-  # FEEL FREE TO EDIT: This file is NOT managed by fleek. 
+{ pkgs, misc, lib, ... }: {
+  
+# FEEL FREE TO EDIT: This file is NOT managed by fleek. 
 home.activation = {
   getAstroNvim = lib.hm.dag.entryAfter ["writeBoundary"] ''
     $DRY_RUN_CMD rm -rf $VERBOSE_ARG \
