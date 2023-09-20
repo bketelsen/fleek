@@ -29,6 +29,11 @@ systems:
       hostname: chapterhouse
       os: darwin
       username: bjk
+    - arch: x86_64
+      home: ""
+      hostname: ghanima
+      os: linux
+      username: bjk
 track: nixos-unstable
 unfree: true
 users:
