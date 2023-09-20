@@ -34,6 +34,11 @@ systems:
       hostname: ghanima
       os: linux
       username: bjk
+    - arch: aarch64
+      home: ""
+      hostname: f84d89911e5d.ant.amazon.com
+      os: darwin
+      username: brianjk
 track: nixos-unstable
 unfree: true
 users:
@@ -42,3 +47,8 @@ users:
       ssh_private_key_file: ~/.ssh/id_rsa
       ssh_public_key_file: ~/.ssh/id_rsa.pub
       username: bjk
+    - email: bketelsen@gmail.com
+      name: Brian Ketelsen
+      ssh_private_key_file: ~/.ssh/id_ecdsa
+      ssh_public_key_file: ~/.ssh/id_ecdsa.pub
+      username: brianjk
