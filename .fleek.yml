@@ -58,7 +58,7 @@ users:
       ssh_public_key_file: ~/.ssh/id_ecdsa.pub
       username: brianjk
     - email: bketelsen@gmail.com
-      name: bjk
+      name: Brian Ketelsen
       ssh_private_key_file: ~/.ssh/id_rsa
       ssh_public_key_file: ~/.ssh/id_rsa.pub
       username: debian
