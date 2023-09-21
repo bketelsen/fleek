@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "narHash": "sha256-0Lg9FyrT8smi8T6RpoUII6PZKKouUzp19osxU/2dzAk=",
-        "rev": "90cf29928f9b7b554429497d8ac467ca95c565de",
-        "revCount": 431,
+        "narHash": "sha256-wfRtXVovycfajSakqDNf0JHQqMJ8jMxkJ8Bq2wwAGyg=",
+        "rev": "2c8d302446475e8bfd840dc14d50974ca6da9bb6",
+        "revCount": 433,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/ublue-os/fleek/0.9.24/018ab7b7-da4c-718f-a60b-175d3d491b03/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/ublue-os/fleek/0.9.25/018ab80e-016f-7bcd-8cfd-fdcff9f1bde3/source.tar.gz"
       },
       "original": {
         "type": "tarball",
@@ -52,11 +52,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1694959747,
-        "narHash": "sha256-CXQ2MuledDVlVM5dLC4pB41cFlBWxRw4tCBsFrq3cRk=",
+        "lastModified": 1695145219,
+        "narHash": "sha256-Eoe9IHbvmo5wEDeJXKFOpKUwxYJIOxKUesounVccNYk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "970a59bd19eff3752ce552935687100c46e820a5",
+        "rev": "5ba549eafcf3e33405e5f66decd1a72356632b96",
         "type": "github"
       },
       "original": {
