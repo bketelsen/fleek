@@ -39,6 +39,11 @@ systems:
       hostname: f84d89911e5d.ant.amazon.com
       os: darwin
       username: brianjk
+    - arch: x86_64
+      home: ""
+      hostname: debiandev
+      os: linux
+      username: debian
 track: nixos-unstable
 unfree: true
 users:
@@ -52,3 +57,8 @@ users:
       ssh_private_key_file: ~/.ssh/id_ecdsa
       ssh_public_key_file: ~/.ssh/id_ecdsa.pub
       username: brianjk
+    - email: bketelsen@gmail.com
+      name: bjk
+      ssh_private_key_file: ~/.ssh/id_rsa
+      ssh_public_key_file: ~/.ssh/id_rsa.pub
+      username: debian
