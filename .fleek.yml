@@ -29,26 +29,56 @@ systems:
       home: ""
       hostname: chapterhouse
       os: darwin
+      user:
+        email: bketelsen@gmail.com
+        name: Brian Ketelsen
+        ssh_private_key_file: ~/.ssh/id_rsa
+        ssh_public_key_file: ~/.ssh/id_rsa.pub
+        username: bjk
       username: bjk
     - arch: x86_64
       home: ""
       hostname: ghanima
       os: linux
+      user:
+        email: bketelsen@gmail.com
+        name: Brian Ketelsen
+        ssh_private_key_file: ~/.ssh/id_rsa
+        ssh_public_key_file: ~/.ssh/id_rsa.pub
+        username: bjk
       username: bjk
     - arch: aarch64
       home: ""
       hostname: f84d89911e5d.ant.amazon.com
       os: darwin
+      user:
+        email: bketelsen@gmail.com
+        name: Brian Ketelsen
+        ssh_private_key_file: ~/.ssh/id_ecdsa
+        ssh_public_key_file: ~/.ssh/id_ecdsa.pub
+        username: brianjk
       username: brianjk
     - arch: x86_64
       home: ""
       hostname: debiandev
       os: linux
+      user:
+        email: bketelsen@gmail.com
+        name: Brian Ketelsen
+        ssh_private_key_file: ~/.ssh/id_rsa
+        ssh_public_key_file: ~/.ssh/id_rsa.pub
+        username: debian
       username: debian
     - arch: x86_64
       home: ""
       hostname: beast
       os: linux
+      user:
+        email: bketelsen@gmail.com
+        name: Brian Ketelsen
+        ssh_private_key_file: ~/.ssh/id_rsa
+        ssh_public_key_file: ~/.ssh/id_rsa.pub
+        username: bjk
       username: bjk
 track: nixos-unstable
 unfree: true
