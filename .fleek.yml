@@ -17,6 +17,7 @@ name: Fleek Configuration
 overlays: {}
 packages:
     - go_1_21
+    - golangci-lint
 paths:
     - $HOME/bin
     - $HOME/.local/bin
