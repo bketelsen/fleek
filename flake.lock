@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "narHash": "sha256-wfRtXVovycfajSakqDNf0JHQqMJ8jMxkJ8Bq2wwAGyg=",
-        "rev": "2c8d302446475e8bfd840dc14d50974ca6da9bb6",
-        "revCount": 433,
+        "narHash": "sha256-ef1p/j6UzbqhHEk0q37SrDgobbuxhIJALvKyJuFcuuk=",
+        "rev": "124bf1e640362e7ef2d860c7e91df1e5814762f8",
+        "revCount": 439,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/ublue-os/fleek/0.9.25/018ab80e-016f-7bcd-8cfd-fdcff9f1bde3/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/ublue-os/fleek/0.10.1/018abe9d-c684-773f-8d72-92f17d5b53f0/source.tar.gz"
       },
       "original": {
         "type": "tarball",
