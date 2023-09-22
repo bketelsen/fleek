@@ -22,6 +22,7 @@
     # user selected packages
     pkgs.go_1_21
     pkgs.golangci-lint
+    pkgs.vim
     # Fleek Bling
     pkgs.git
     pkgs.htop
@@ -37,7 +38,6 @@
     pkgs.neofetch
     pkgs.btop
     pkgs.cheat
-    pkgs.just
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
   fonts.fontconfig.enable = true; 
