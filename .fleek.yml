@@ -44,6 +44,11 @@ systems:
       hostname: debiandev
       os: linux
       username: debian
+    - arch: x86_64
+      home: ""
+      hostname: beast
+      os: linux
+      username: bjk
 track: nixos-unstable
 unfree: true
 users:
