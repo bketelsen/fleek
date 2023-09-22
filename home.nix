@@ -22,7 +22,6 @@
     # user selected packages
     pkgs.go_1_21
     pkgs.golangci-lint
-    pkgs.vim
     # Fleek Bling
     pkgs.git
     pkgs.htop
