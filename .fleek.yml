@@ -18,6 +18,7 @@ overlays: {}
 packages:
     - go_1_21
     - golangci-lint
+    - vim
 paths:
     - $HOME/bin
     - $HOME/.local/bin
