@@ -38,6 +38,7 @@
     pkgs.neofetch
     pkgs.btop
     pkgs.cheat
+    pkgs.just
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
   fonts.fontconfig.enable = true; 
