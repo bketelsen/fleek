@@ -24,6 +24,12 @@
     
      packages.x86_64-linux.fleek = fleek.packages.x86_64-linux.default;
     
+     packages.aarch64-darwin.fleek = fleek.packages.aarch64-darwin.default;
+    
+     packages.x86_64-linux.fleek = fleek.packages.x86_64-linux.default;
+    
+     packages.x86_64-linux.fleek = fleek.packages.x86_64-linux.default;
+    
     # Available through 'home-manager --flake .#your-username@your-hostname'
     
     homeConfigurations = {
