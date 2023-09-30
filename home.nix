@@ -33,7 +33,7 @@
     pkgs.vscode
     pkgs.lazygit
     pkgs.jq
-    pkgs.yq
+    pkgs.yq-go
     pkgs.neovim
     pkgs.neofetch
     pkgs.btop
