@@ -19,6 +19,7 @@ packages:
     - go_1_21
     - golangci-lint
     - vim
+    - nodejs
 paths:
     - $HOME/bin
     - $HOME/.local/bin

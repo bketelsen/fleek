@@ -23,6 +23,7 @@
     pkgs.go_1_21
     pkgs.golangci-lint
     pkgs.vim
+    pkgs.nodejs
     # Fleek Bling
     pkgs.git
     pkgs.htop
