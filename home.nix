@@ -24,7 +24,6 @@
     pkgs.golangci-lint
     pkgs.vim
     pkgs.nodejs
-    pkgs.incus
     # Fleek Bling
     pkgs.git
     pkgs.htop
