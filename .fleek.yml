@@ -20,6 +20,7 @@ packages:
     - golangci-lint
     - vim
     - nodejs
+    - incus
 paths:
     - $HOME/bin
     - $HOME/.local/bin
